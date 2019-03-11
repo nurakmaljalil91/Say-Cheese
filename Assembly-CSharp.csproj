@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\ItemInGameScripts\CheeseSpawner.cs" />
      <Compile Include="Assets\Scripts\MainMenuScripts\SceneController.cs" />
      <Compile Include="Assets\Scripts\NPCScripts\NPCMovement.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\PlayerMovement.cs" />
