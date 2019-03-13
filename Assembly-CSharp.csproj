@@ -54,11 +54,13 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\ItemInGameScripts\CheeseSpawner.cs" />
+     <Compile Include="Assets\Scripts\MainMenuScripts\ApplicationController.cs" />
      <Compile Include="Assets\Scripts\MainMenuScripts\SceneController.cs" />
      <Compile Include="Assets\Scripts\NPCScripts\NPCCollectsCheese.cs" />
      <Compile Include="Assets\Scripts\NPCScripts\NPCMovement.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\PlayerCollectCheese.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\PlayerMovementUsingTouch.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/shida jalil/Documents/Unity Projects/Say Cheese Version 0.0.1/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
