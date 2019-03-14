@@ -7,6 +7,9 @@ using UnityEngine.AI;
 public class PlayerMovementUsingTouch : MonoBehaviour
 {
 
+    public GameObject prefabMoveIndicator;
+
+    private GameObject movingIndicator;
     private enum STATE { idle, moving };
 
     private STATE state;
@@ -48,10 +51,11 @@ public class PlayerMovementUsingTouch : MonoBehaviour
             if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 100))
             {
                 agent.destination = hit.point;
+                movingIndicator = Instantiate(prefabMoveIndicator, hit.point, Quaternion.identity);
                 state = STATE.moving;
             }
         }
-		DebugPositionText();
+        DebugPositionText();
 
     }
 
@@ -63,6 +67,7 @@ public class PlayerMovementUsingTouch : MonoBehaviour
             {
                 if (!agent.hasPath || agent.velocity.sqrMagnitude == 0f)
                 {
+                    Destroy(movingIndicator.gameObject);
                     state = STATE.idle;
                 }
             }

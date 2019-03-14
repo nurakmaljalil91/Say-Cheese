@@ -55,6 +55,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\ItemInGameScripts\CheeseSpawner.cs" />
      <Compile Include="Assets\Scripts\MainMenuScripts\ApplicationController.cs" />
+     <Compile Include="Assets\Scripts\MainMenuScripts\CuteHamsterRotate.cs" />
      <Compile Include="Assets\Scripts\MainMenuScripts\SceneController.cs" />
      <Compile Include="Assets\Scripts\NPCScripts\NPCCollectsCheese.cs" />
      <Compile Include="Assets\Scripts\NPCScripts\NPCMovement.cs" />
