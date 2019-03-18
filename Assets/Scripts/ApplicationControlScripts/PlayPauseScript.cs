@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class PlayPauseScript : MonoBehaviour {
 
+	void Start(){
+		if(Time.timeScale == 0){
+			Time.timeScale = 1;
+		}
+	}
 	public void PauseTheGame(){
 		Time.timeScale = 0;
 	}

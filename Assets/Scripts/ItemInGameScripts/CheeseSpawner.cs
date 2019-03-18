@@ -12,17 +12,20 @@ public class CheeseSpawner : MonoBehaviour
 
     private GameObject[] cheeseLocationInArray;
 
-
+    [SerializeField] private int totalNumberOfCheese;
 
     private bool cheeseIsInMap;
 
     private Vector3 randomPosition;
+
+    public GameObject gameFinishPanel;
 
     // Use this for initialization
     void Start()
     {
         InitTheArrayWithTheLocationOfCheese();
         cheeseIsInMap = false;
+        totalNumberOfCheese = 10;
     }
 
     // Update is called once per frame
@@ -33,7 +36,7 @@ public class CheeseSpawner : MonoBehaviour
         // the cheese is exist
         CheckIfTheCheeseIsExistOnMap();
         // check if there is a cheese in the map
-        if (!cheeseIsInMap)
+        if (!cheeseIsInMap && totalNumberOfCheese != 0)
         {
             // TODO: Generate the random position location
             GenerateRandomLocation();
@@ -41,6 +44,8 @@ public class CheeseSpawner : MonoBehaviour
             SpawnTheCheese();
 
         }
+
+        GameIsFinish();
 
 
 
@@ -73,6 +78,7 @@ public class CheeseSpawner : MonoBehaviour
         // Instatiate the cheese
         cheese = Instantiate(cheesePrefab, randomPosition, Quaternion.identity);
         cheeseIsInMap = true;
+        totalNumberOfCheese--;
     }
 
     void CheckIfTheCheeseIsExistOnMap()
@@ -85,6 +91,16 @@ public class CheeseSpawner : MonoBehaviour
         {
             cheeseIsInMap = false;
         }
+    }
+
+    void GameIsFinish()
+    {
+        if (totalNumberOfCheese == 0)
+        {
+            gameFinishPanel.SetActive(true);
+            Time.timeScale = 0;
+        }
+
     }
 
 }

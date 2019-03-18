@@ -8,6 +8,7 @@ TagManager:
   - NPC 1
   - NPC 2
   - NPC 3
+  - Candy
   layers:
   - Default
   - TransparentFX

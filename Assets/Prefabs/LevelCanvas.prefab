@@ -512,7 +512,7 @@ GameObject:
   - component: {fileID: 222298913126224302}
   - component: {fileID: 114326603225866332}
   m_Layer: 5
-  m_Name: WinningPanel
+  m_Name: FinishGamePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

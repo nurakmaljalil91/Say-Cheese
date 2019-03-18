@@ -121,6 +121,7 @@ GameObject:
   - component: {fileID: 114959294269690956}
   - component: {fileID: 195681855642093134}
   - component: {fileID: 114757278870516136}
+  - component: {fileID: 114337101177592632}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -500,6 +501,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114337101177592632
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1536287299426478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff59132b6254f364f85771207e59b587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114757278870516136
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -513,7 +525,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NumberOfCheese: 0
   cheeseScoreText: {fileID: 0}
-  winningPanel: {fileID: 0}
 --- !u!114 &114959294269690956
 MonoBehaviour:
   m_ObjectHideFlags: 1

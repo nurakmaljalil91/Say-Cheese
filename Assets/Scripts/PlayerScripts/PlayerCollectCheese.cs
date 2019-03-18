@@ -10,7 +10,7 @@ public class PlayerCollectCheese : MonoBehaviour {
 
 	public Text cheeseScoreText;
 
-	public GameObject winningPanel;
+	// public GameObject winningPanel;
 
 	// Use this for initialization
 	void Start () {
@@ -21,7 +21,7 @@ public class PlayerCollectCheese : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		cheeseScoreText.text = "CHEESE : " + NumberOfCheese;
-		WiningTheLevel();
+		// WiningTheLevel();
 	}
 
 	
@@ -35,7 +35,7 @@ public class PlayerCollectCheese : MonoBehaviour {
 
 	void WiningTheLevel(){
 		if(NumberOfCheese >= 10){
-			winningPanel.SetActive(true);
+			// winningPanel.SetActive(true);
 			Time.timeScale = 0;
 		}
 	}
