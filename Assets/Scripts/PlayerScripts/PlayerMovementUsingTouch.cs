@@ -77,7 +77,11 @@ public class PlayerMovementUsingTouch : MonoBehaviour
             {
                 if (!agent.hasPath || agent.velocity.sqrMagnitude == 0f)
                 {
-                    Destroy(movingIndicator.gameObject);
+                    if (movingIndicator)
+                    {
+                        Destroy(movingIndicator.gameObject);
+                    }
+                   
                     //state = STATE.idle;
                 }
             }

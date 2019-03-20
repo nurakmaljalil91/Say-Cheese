@@ -7,6 +7,7 @@ public class PlayerPowerUp : MonoBehaviour {
 
 	
 	private NavMeshAgent agent;
+    public AudioManagerScripts audioManager;
 
 	// Use this for initialization
 	void Start () {
@@ -20,10 +21,9 @@ public class PlayerPowerUp : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other){
 		if(other.tag.Equals("Candy")){
-			// Speed of agent increase
-			// agent.speed = 10;
+            audioManager.PlaySound("PowerUp");
 			Destroy(other.gameObject);
-			StartCoroutine(SpeedIncrease(15f));
+            StartCoroutine(SpeedIncrease(15f));
 
 		}
 	}

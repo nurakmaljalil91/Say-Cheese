@@ -8,6 +8,8 @@ public class PlayerCollectCheese : MonoBehaviour {
 	[SerializeField] private int NumberOfCheese;
 	private Rigidbody rBody;
 
+    public AudioManagerScripts audioManager;
+
 	public Text cheeseScoreText;
 
 	// public GameObject winningPanel;
@@ -28,8 +30,9 @@ public class PlayerCollectCheese : MonoBehaviour {
 	void OnTriggerEnter(Collider other){
 		// Debug.Log(other.tag);
 		if(other.tag.Equals("Cheese")){
-			Destroy(other.gameObject);
-			NumberOfCheese++;
+            audioManager.PlaySound("Eat");
+            Destroy(other.gameObject);
+            NumberOfCheese++;
 		}
 	}
 

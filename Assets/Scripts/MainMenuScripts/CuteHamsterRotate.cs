@@ -34,7 +34,7 @@ public class CuteHamsterRotate : MonoBehaviour
 
         }
 
-        Debug.Log(rectangle.rotation.eulerAngles);
+        //Debug.Log(rectangle.rotation.eulerAngles);
 
 
     }
