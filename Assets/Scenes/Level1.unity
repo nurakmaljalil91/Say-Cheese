@@ -3931,6 +3931,11 @@ Prefab:
       propertyPath: m_Name
       value: NPC1
       objectReference: {fileID: 0}
+    - target: {fileID: 95983323162952988, guid: f9effb386b46c6f43ba64da24a686aba,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 65f4298d444f1d84aaea1810ad7a5c9c, type: 2}
     m_RemovedComponents:
     - {fileID: 65852583939076444, guid: f9effb386b46c6f43ba64da24a686aba, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: f9effb386b46c6f43ba64da24a686aba, type: 2}
