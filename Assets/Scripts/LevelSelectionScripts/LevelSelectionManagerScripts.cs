@@ -23,7 +23,7 @@ public class LevelSelectionManagerScripts : MonoBehaviour {
             levels[i] = transform.GetChild(i).gameObject;
         }
 
-        Debug.Log("Current level: "+currentLevel);
+        //Debug.Log("Current level: "+currentLevel);
         // loop here to check number of level unlock
         for(int i = 0; i < currentLevel; i++)
         {
