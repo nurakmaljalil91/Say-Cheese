@@ -67,6 +67,7 @@
      <Compile Include="Assets\Scripts\MainMenuScripts\SceneController.cs" />
      <Compile Include="Assets\Scripts\MainMenuScripts\SettingPanelScript.cs" />
      <Compile Include="Assets\Scripts\MainMenuScripts\SettingToggleButtonScript.cs" />
+     <Compile Include="Assets\Scripts\MainMenuScripts\ShopControllerScript.cs" />
      <Compile Include="Assets\Scripts\MainMenuScripts\ShopPanelScript.cs" />
      <Compile Include="Assets\Scripts\MainMenuScripts\ShopToggelScript.cs" />
      <Compile Include="Assets\Scripts\NPCScripts\NPCCollectsCheese.cs" />
