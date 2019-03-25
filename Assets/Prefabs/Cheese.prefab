@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 4548648608824732}
   - component: {fileID: 33535501369424718}
   - component: {fileID: 23563001644955458}
+  - component: {fileID: 114226239884887022}
   m_Layer: 0
   m_Name: CHEESE01
   m_TagString: Untagged
@@ -173,6 +174,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114226239884887022
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1693394618146412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 216763ecf1beb8e4593ec18b1812cec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &135136821513749260
 SphereCollider:
   m_ObjectHideFlags: 1

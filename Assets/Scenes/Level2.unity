@@ -3102,7 +3102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfe0d5a08409126468572a7afbb518f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerUpPrefab: {fileID: 1562556060047758, guid: 6de5414c830fcaa4e8215596eda1f93e,
+  powerUpPrefab: {fileID: 1539662539445500, guid: 6de5414c830fcaa4e8215596eda1f93e,
     type: 2}
   powerUpLocation: []
   durationForSpawn: 30

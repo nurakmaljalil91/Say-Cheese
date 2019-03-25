@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class PowerUpScript : MonoBehaviour
 {
-
-
     public GameObject powerUpPrefab;
 
     private GameObject powerUp;

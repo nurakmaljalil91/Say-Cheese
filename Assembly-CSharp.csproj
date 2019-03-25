@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\ApplicationControlScripts\LevelMenuScripts.cs" />
      <Compile Include="Assets\Scripts\ApplicationControlScripts\PlayPauseScript.cs" />
      <Compile Include="Assets\Scripts\AudioManagerScripts\AudioManagerScripts.cs" />
+     <Compile Include="Assets\Scripts\ItemInGameScripts\CheeseRotateScript.cs" />
      <Compile Include="Assets\Scripts\ItemInGameScripts\CheeseSpawner.cs" />
      <Compile Include="Assets\Scripts\LevelManager\LevelCompleteStarScript.cs" />
      <Compile Include="Assets\Scripts\LevelSelectionScripts\LevelSelectionManagerScripts.cs" />
@@ -66,6 +67,8 @@
      <Compile Include="Assets\Scripts\MainMenuScripts\SceneController.cs" />
      <Compile Include="Assets\Scripts\MainMenuScripts\SettingPanelScript.cs" />
      <Compile Include="Assets\Scripts\MainMenuScripts\SettingToggleButtonScript.cs" />
+     <Compile Include="Assets\Scripts\MainMenuScripts\ShopPanelScript.cs" />
+     <Compile Include="Assets\Scripts\MainMenuScripts\ShopToggelScript.cs" />
      <Compile Include="Assets\Scripts\NPCScripts\NPCCollectsCheese.cs" />
      <Compile Include="Assets\Scripts\NPCScripts\NPCMovement.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\PlayerCollectCheese.cs" />
