@@ -9,6 +9,7 @@ TagManager:
   - NPC 2
   - NPC 3
   - Candy
+  - AudioManager
   layers:
   - Default
   - TransparentFX

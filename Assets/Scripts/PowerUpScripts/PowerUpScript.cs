@@ -28,7 +28,7 @@ public class PowerUpScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		Debug.Log(durationForSpawn);
+		// Debug.Log(durationForSpawn);
 		GenerateRandomLocation();
 		SpawnThePowerUp();
     }

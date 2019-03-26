@@ -3,35 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class ShopControllerScript : MonoBehaviour {
  
-	public int totalGameGolds;
+	public Text goldText;
 
-	[SerializeField] private GameObject[] items;
+	private int currentPlayerGold;
+
+	
 	// Use this for initialization
 	void Start () {
 
-		items = new GameObject[transform.childCount];
-
-		for(int i = 0; i < transform.childCount; i++){
-			items[i] = transform.GetChild(i).gameObject;
-
-		}
-
-		// This for testing so the game gold will be hundred
-		totalGameGolds = 100;
-		// totalGameGolds = PlayerPrefs.GetInt("Gold");
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+		CheckAndUpdatePlayerGold();
+	}
+
+	public void CheckAndUpdatePlayerGold(){
+		// currentPlayerGold = PlayerPrefs.GetInt("Gold");
+		currentPlayerGold = 100;
+		goldText.text = "GOLD : "+ currentPlayerGold;
+
 	}
 
 
-	public void BuyItem(){
-		// Check if the money enough to buy the item
-		// if enough the button will change to equip
-		
-	}
+	
 }

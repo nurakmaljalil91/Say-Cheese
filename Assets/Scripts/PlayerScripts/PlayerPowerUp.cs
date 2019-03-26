@@ -7,10 +7,11 @@ public class PlayerPowerUp : MonoBehaviour {
 
 	
 	private NavMeshAgent agent;
-    public AudioManagerScripts audioManager;
+    private GameObject audioManager;
 
 	// Use this for initialization
 	void Start () {
+		audioManager = GameObject.FindGameObjectWithTag("AudioManager");
 		agent = GetComponent<NavMeshAgent>();
 	}
 	
@@ -21,7 +22,7 @@ public class PlayerPowerUp : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other){
 		if(other.tag.Equals("Candy")){
-            audioManager.PlaySound("PowerUp");
+            audioManager.GetComponent<AudioManagerScripts>().PlaySound("PowerUp");
 			Destroy(other.gameObject);
             StartCoroutine(SpeedIncrease(15f));
 

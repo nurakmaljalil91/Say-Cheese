@@ -60,9 +60,12 @@
      <Compile Include="Assets\Scripts\ItemInGameScripts\CheeseRotateScript.cs" />
      <Compile Include="Assets\Scripts\ItemInGameScripts\CheeseSpawner.cs" />
      <Compile Include="Assets\Scripts\LevelManager\LevelCompleteStarScript.cs" />
+     <Compile Include="Assets\Scripts\LevelManager\PlayerSpawnerScript.cs" />
      <Compile Include="Assets\Scripts\LevelSelectionScripts\LevelSelectionManagerScripts.cs" />
      <Compile Include="Assets\Scripts\MainMenuScripts\ApplicationController.cs" />
+     <Compile Include="Assets\Scripts\MainMenuScripts\BuyButtonScript.cs" />
      <Compile Include="Assets\Scripts\MainMenuScripts\CuteHamsterRotate.cs" />
+     <Compile Include="Assets\Scripts\MainMenuScripts\EquipEnquipAccessoriesScript.cs" />
      <Compile Include="Assets\Scripts\MainMenuScripts\MusicToggleScript.cs" />
      <Compile Include="Assets\Scripts\MainMenuScripts\SceneController.cs" />
      <Compile Include="Assets\Scripts\MainMenuScripts\SettingPanelScript.cs" />
@@ -72,7 +75,9 @@
      <Compile Include="Assets\Scripts\MainMenuScripts\ShopToggelScript.cs" />
      <Compile Include="Assets\Scripts\NPCScripts\NPCCollectsCheese.cs" />
      <Compile Include="Assets\Scripts\NPCScripts\NPCMovement.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\PlayerAccessoriesScript.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\PlayerCollectCheese.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\PlayerIndicatorRotateScript.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\PlayerMovementUsingTouch.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\PlayerPowerUp.cs" />

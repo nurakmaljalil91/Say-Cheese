@@ -8,7 +8,7 @@ public class PlayerCollectCheese : MonoBehaviour {
 	[SerializeField] private int NumberOfCheese;
 	private Rigidbody rBody;
 
-    public AudioManagerScripts audioManager;
+    private GameObject audioManager;
 
 	public Text cheeseScoreText;
 
@@ -17,6 +17,7 @@ public class PlayerCollectCheese : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//rBody = GetComponent<Rigidbody>();
+		audioManager = GameObject.FindGameObjectWithTag("AudioManager");
 		NumberOfCheese = 0;
 	}
 	
@@ -30,7 +31,7 @@ public class PlayerCollectCheese : MonoBehaviour {
 	void OnTriggerEnter(Collider other){
 		// Debug.Log(other.tag);
 		if(other.tag.Equals("Cheese")){
-            audioManager.PlaySound("Eat");
+            audioManager.GetComponent<AudioManagerScripts>().PlaySound("Eat");
             Destroy(other.gameObject);
             NumberOfCheese++;
 		}

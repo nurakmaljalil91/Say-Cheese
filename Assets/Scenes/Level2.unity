@@ -2824,6 +2824,10 @@ Prefab:
       propertyPath: sounds.Array.data[2].randomPitch
       value: 0.267
       objectReference: {fileID: 0}
+    - target: {fileID: 1183470622350320, guid: 0e8c233fea4723141ac2c2fbddb7b606, type: 2}
+      propertyPath: m_TagString
+      value: AudioManager
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e8c233fea4723141ac2c2fbddb7b606, type: 2}
   m_IsPrefabAsset: 0
