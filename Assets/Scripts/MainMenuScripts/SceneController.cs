@@ -7,7 +7,7 @@ public class SceneController : MonoBehaviour
 {
 
     public GameObject LoadingScenePanel;
-    public Slider slider;
+    // public Slider slider;
     // Play game
     public void PlayGame(int sceneIndex)
     {
@@ -25,7 +25,7 @@ public class SceneController : MonoBehaviour
 		while(!operation.isDone){
 			float progress = Mathf.Clamp01(operation.progress / .9f);
 
-			slider.value = progress;
+			// slider.value = progress;
 			yield return null;
 		}
     }

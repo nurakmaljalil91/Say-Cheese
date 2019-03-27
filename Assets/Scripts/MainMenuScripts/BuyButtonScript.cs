@@ -10,8 +10,8 @@ public class BuyButtonScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		// currentPlayerGold = 900;
-		// price = 450;
+		currentPlayerGold = 100;
+		price = 450;
 	}
 	
 	// Update is called once per frame
