@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class EquipEnquipAccessoriesScript : MonoBehaviour
 {
 
-    private GameObject equipImage;
-    private GameObject unequipImage;
+    private GameObject equipText;
+    // private GameObject unequipText;
 
     public bool hat;
     public bool bagpack;
@@ -19,8 +19,8 @@ public class EquipEnquipAccessoriesScript : MonoBehaviour
     void Start()
     {
 
-        unequipImage = transform.GetChild(0).gameObject;
-        equipImage = transform.GetChild(1).gameObject;
+        // unequipText = transform.GetChild(0).gameObject;
+        equipText = transform.GetChild(1).gameObject;
 
     }
 
@@ -28,7 +28,7 @@ public class EquipEnquipAccessoriesScript : MonoBehaviour
     void Update()
     {
 
-        CheckOtherIfItemEquip();
+        // CheckOtherIfItemEquip();
     }
 
     public void OnChangeValue()
@@ -38,37 +38,37 @@ public class EquipEnquipAccessoriesScript : MonoBehaviour
 
         if (onOffSwitch)
         {
-            equipImage.SetActive(true);
+            equipText.SetActive(true);
             if (hat)
             {
-                PlayerPrefs.SetInt("hat", 0);
+                PlayerPrefs.SetInt("hat", id);
 
                 // Debug.Log("Player wear hat with " + PlayerPrefs.GetInt("hat"));
             }
             if (bagpack)
             {
-                PlayerPrefs.SetInt("bag", 0);
+                PlayerPrefs.SetInt("bag", id);
 
                 // Debug.Log("Player wear bag with " + PlayerPrefs.GetInt("bag"));
             }
         }
         if (!onOffSwitch)
         {
-            equipImage.SetActive(false);
+            equipText.SetActive(false);
             if (hat)
             {
-                PlayerPrefs.SetInt("hat", id);
+                PlayerPrefs.SetInt("hat", 0);
                 // Debug.Log("Player wear hat with " + PlayerPrefs.GetInt("hat"));
             }
             if (bagpack)
             {
 
-                PlayerPrefs.SetInt("bag", id);
+                PlayerPrefs.SetInt("bag", 0);
 
                 // Debug.Log("Player wear bag with " + PlayerPrefs.GetInt("bag"));
             }
         }
-
+        Debug.Log(PlayerPrefs.GetInt("bag"));
 
     }
 
@@ -83,9 +83,9 @@ public class EquipEnquipAccessoriesScript : MonoBehaviour
                 {
                     transform.gameObject.GetComponent<Toggle>().isOn = true;
                 }
-                if (!equipImage)
+                if (!equipText)
                 {
-                    equipImage.SetActive(true);
+                    equipText.SetActive(true);
                 }
             }
         }
@@ -98,9 +98,9 @@ public class EquipEnquipAccessoriesScript : MonoBehaviour
                 {
                     transform.gameObject.GetComponent<Toggle>().isOn = true;
                 }
-                if (!equipImage)
+                if (!equipText)
                 {
-                    equipImage.SetActive(true);
+                    equipText.SetActive(true);
                 }
 
             }

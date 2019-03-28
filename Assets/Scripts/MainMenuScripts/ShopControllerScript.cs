@@ -22,8 +22,8 @@ public class ShopControllerScript : MonoBehaviour {
 	}
 
 	public void CheckAndUpdatePlayerGold(){
-		// currentPlayerGold = PlayerPrefs.GetInt("Gold");
-		currentPlayerGold = 100;
+		currentPlayerGold = PlayerPrefs.GetInt("Gold");
+		// currentPlayerGold = 100;
 		goldText.text = "GOLD : "+ currentPlayerGold;
 
 	}

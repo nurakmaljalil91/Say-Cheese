@@ -65,8 +65,11 @@
      <Compile Include="Assets\Scripts\MainMenuScripts\ApplicationController.cs" />
      <Compile Include="Assets\Scripts\MainMenuScripts\BuyButtonScript.cs" />
      <Compile Include="Assets\Scripts\MainMenuScripts\CuteHamsterRotate.cs" />
-     <Compile Include="Assets\Scripts\MainMenuScripts\EquipEnquipAccessoriesScript.cs" />
      <Compile Include="Assets\Scripts\MainMenuScripts\MusicToggleScript.cs" />
+     <Compile Include="Assets\Scripts\MainMenuScripts\New All Shop Scripts\AreYouSurePanelScript.cs" />
+     <Compile Include="Assets\Scripts\MainMenuScripts\New All Shop Scripts\BuyButtonScript2.cs" />
+     <Compile Include="Assets\Scripts\MainMenuScripts\New All Shop Scripts\EquipEnquipAccessoriesScript.cs" />
+     <Compile Include="Assets\Scripts\MainMenuScripts\New All Shop Scripts\YesButtonScript.cs" />
      <Compile Include="Assets\Scripts\MainMenuScripts\SceneController.cs" />
      <Compile Include="Assets\Scripts\MainMenuScripts\SettingPanelScript.cs" />
      <Compile Include="Assets\Scripts\MainMenuScripts\SettingToggleButtonScript.cs" />
