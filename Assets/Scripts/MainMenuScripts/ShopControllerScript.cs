@@ -13,7 +13,7 @@ public class ShopControllerScript : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-
+		PlayerPrefs.SetInt("Gold", 100);
 	}
 	
 	// Update is called once per frame

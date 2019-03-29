@@ -2,43 +2,95 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerAccessoriesScript : MonoBehaviour {
+public class PlayerAccessoriesScript : MonoBehaviour
+{
 
-	private int topHat;
+    private int hat;
 
-	private int backpack;
-	// Use this for initialization
-	void Start () {
-		// TODO: Player top hat will determine by the 
-		// if zero so no items attached
-		// maybe can use switch here
-	
-		topHat = 3;
-		backpack = 1;
-		for(int i = 0 ; i < gameObject.transform.childCount; i++){
-			if( topHat == 1){
-				if(transform.GetChild(i).name.Equals("bag01")){
-					transform.GetChild(i).gameObject.SetActive(true);
-				}	
-			}
-			if(topHat == 2){
-				if(transform.GetChild(i).name.Equals("bag02")){
-					transform.GetChild(i).gameObject.SetActive(true);
-				}
-			}
-			if(topHat == 3){
-				if(transform.GetChild(i).name.Equals("bag03")){
-					transform.GetChild(i).gameObject.SetActive(true);
-				}
-			}
-		}
+    private int bag;
+    // Use this for initialization
+    void Start()
+    {
+        // TODO: Player top hat will determine by the 
+        // if zero so no items attached
+        // maybe can use switch here
 
-		// for(int i = 0; i < )
-			
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+		hat = PlayerPrefs.GetInt("hat");
+		bag = PlayerPrefs.GetInt("bag");
+        for (int i = 0; i < gameObject.transform.childCount; i++)
+        {
+            if (bag == 1)
+            {
+                if (transform.GetChild(i).name.Equals("bag01"))
+                {
+                    transform.GetChild(i).gameObject.SetActive(true);
+                }
+            }
+            if (bag == 2)
+            {
+                if (transform.GetChild(i).name.Equals("bag02"))
+                {
+                    transform.GetChild(i).gameObject.SetActive(true);
+                }
+            }
+            if (bag == 3)
+            {
+                if (transform.GetChild(i).name.Equals("bag03"))
+                {
+                    transform.GetChild(i).gameObject.SetActive(true);
+                }
+            }
+            if (hat == 1)
+            {
+                if (transform.GetChild(i).name.Equals("cap01"))
+                {
+                    transform.GetChild(i).gameObject.SetActive(true);
+                }
+            }
+            if (hat == 2)
+            {
+                if (transform.GetChild(i).name.Equals("cap02"))
+                {
+                    transform.GetChild(i).gameObject.SetActive(true);
+                }
+            }
+            if (hat == 3)
+            {
+                if (transform.GetChild(i).name.Equals("cap03"))
+                {
+                    transform.GetChild(i).gameObject.SetActive(true);
+                }
+            }
+            if (hat == 4)
+            {
+                if (transform.GetChild(i).name.Equals("crown04"))
+                {
+                    transform.GetChild(i).gameObject.SetActive(true);
+                }
+            }
+            if (hat == 5)
+            {
+                if (transform.GetChild(i).name.Equals("crown05"))
+                {
+                    transform.GetChild(i).gameObject.SetActive(true);
+                }
+            }
+            if (hat == 6)
+            {
+                if (transform.GetChild(i).name.Equals("crown06"))
+                {
+                    transform.GetChild(i).gameObject.SetActive(true);
+                }
+            }
+        }
+
+        // for(int i = 0; i < )
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 }
