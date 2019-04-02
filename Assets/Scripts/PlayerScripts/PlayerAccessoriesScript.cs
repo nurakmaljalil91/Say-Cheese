@@ -15,8 +15,8 @@ public class PlayerAccessoriesScript : MonoBehaviour
         // if zero so no items attached
         // maybe can use switch here
 
-		hat = PlayerPrefs.GetInt("hat");
-		bag = PlayerPrefs.GetInt("bag");
+        hat = PlayerPrefs.GetInt("hat");
+        bag = PlayerPrefs.GetInt("bag");
         for (int i = 0; i < gameObject.transform.childCount; i++)
         {
             if (bag == 1)
@@ -78,6 +78,48 @@ public class PlayerAccessoriesScript : MonoBehaviour
             if (hat == 6)
             {
                 if (transform.GetChild(i).name.Equals("crown06"))
+                {
+                    transform.GetChild(i).gameObject.SetActive(true);
+                }
+            }
+            if (hat == 7)
+            {
+                if (transform.GetChild(i).name.Equals("ribbon07"))
+                {
+                    transform.GetChild(i).gameObject.SetActive(true);
+                }
+            }
+            if (hat == 8)
+            {
+                if (transform.GetChild(i).name.Equals("ribbon08"))
+                {
+                    transform.GetChild(i).gameObject.SetActive(true);
+                }
+            }
+            if (hat == 9)
+            {
+                if (transform.GetChild(i).name.Equals("ribbon09"))
+                {
+                    transform.GetChild(i).gameObject.SetActive(true);
+                }
+            }
+            if (hat == 10)
+            {
+                if (transform.GetChild(i).name.Equals("tophat10"))
+                {
+                    transform.GetChild(i).gameObject.SetActive(true);
+                }
+            }
+            if (hat == 11)
+            {
+                if (transform.GetChild(i).name.Equals("tophat11"))
+                {
+                    transform.GetChild(i).gameObject.SetActive(true);
+                }
+            }
+            if (hat == 12)
+            {
+                if (transform.GetChild(i).name.Equals("tophat12"))
                 {
                     transform.GetChild(i).gameObject.SetActive(true);
                 }

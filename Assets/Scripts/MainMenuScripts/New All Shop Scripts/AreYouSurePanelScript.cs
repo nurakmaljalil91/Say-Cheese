@@ -24,6 +24,7 @@ public class AreYouSurePanelScript : MonoBehaviour {
 		currentPlayerGold = PlayerPrefs.GetInt("Gold");
 		currentPlayerGold -= price;
 		PlayerPrefs.SetInt("Gold", currentPlayerGold);
+		PlayerPrefs.SetInt(buyButton.transform.name, 1); 
 		Destroy(buyButton.gameObject);
 	}
 }

@@ -14,7 +14,8 @@ public class BuyButtonScript2 : MonoBehaviour {
 	void Start () {
 		priceText = transform.GetChild(0).GetComponent<Text>();
 		priceText.text = price.ToString();
-
+		// PlayerPrefs.SetInt(transform.name, 0); // For reset
+		CheckIfAlreadyBought();
 		// currentPlayerGold = 1000;
 		//price = 450;
 	}
@@ -31,5 +32,11 @@ public class BuyButtonScript2 : MonoBehaviour {
 
 		areYouSurePanel.GetComponent<AreYouSurePanelScript>().price = price;
 		areYouSurePanel.GetComponent<AreYouSurePanelScript>().buyButton = this.gameObject;
+	}
+	
+	void CheckIfAlreadyBought(){
+		if(PlayerPrefs.GetInt(transform.name) == 1){
+			Destroy(this.gameObject);
+		}
 	}
 }

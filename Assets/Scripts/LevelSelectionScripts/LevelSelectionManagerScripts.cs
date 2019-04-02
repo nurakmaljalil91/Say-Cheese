@@ -13,6 +13,7 @@ public class LevelSelectionManagerScripts : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+        // PlayerPrefs.SetInt("level", 0); // for reset
         Debug.Log(PlayerPrefs.GetInt("level"));
 
         currentLevel = PlayerPrefs.GetInt("level");

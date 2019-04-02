@@ -11,22 +11,23 @@ public class SceneController : MonoBehaviour
     // Play game
     public void PlayGame(int sceneIndex)
     {
-		StartCoroutine(LoadAsynchronously(sceneIndex));
+        StartCoroutine(LoadAsynchronously(sceneIndex));
     }
 
     IEnumerator LoadAsynchronously(int sceneIndex)
     {
-		// Start to asynchrously change the scene
-		AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
+        // Start to asynchrously change the scene
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
 
-		// Show the loading panel
-		LoadingScenePanel.SetActive(true);
+        // Show the loading panel
+        LoadingScenePanel.SetActive(true);
 
-		while(!operation.isDone){
-			float progress = Mathf.Clamp01(operation.progress / .9f);
+        while (!operation.isDone)
+        {
+            float progress = Mathf.Clamp01(operation.progress / .9f);
 
-			// slider.value = progress;
-			yield return null;
-		}
+            // slider.value = progress;
+            yield return null;
+        }
     }
 }

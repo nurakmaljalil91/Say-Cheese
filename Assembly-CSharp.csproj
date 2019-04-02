@@ -56,12 +56,16 @@
      <Compile Include="Assets\Scripts\ApplicationControlScripts\LevelManagerScript.cs" />
      <Compile Include="Assets\Scripts\ApplicationControlScripts\LevelMenuScripts.cs" />
      <Compile Include="Assets\Scripts\ApplicationControlScripts\PlayPauseScript.cs" />
+     <Compile Include="Assets\Scripts\ApplicationControlScripts\QuitButton.cs" />
      <Compile Include="Assets\Scripts\AudioManagerScripts\AudioManagerScripts.cs" />
      <Compile Include="Assets\Scripts\ItemInGameScripts\CheeseRotateScript.cs" />
      <Compile Include="Assets\Scripts\ItemInGameScripts\CheeseSpawner.cs" />
      <Compile Include="Assets\Scripts\LevelManager\LevelCompleteStarScript.cs" />
+     <Compile Include="Assets\Scripts\LevelManager\NPCSpawnerScript.cs" />
      <Compile Include="Assets\Scripts\LevelManager\PlayerSpawnerScript.cs" />
+     <Compile Include="Assets\Scripts\LevelSelectionScripts\BackToMainMenu.cs" />
      <Compile Include="Assets\Scripts\LevelSelectionScripts\LevelSelectionManagerScripts.cs" />
+     <Compile Include="Assets\Scripts\LoadingScripts\RotatingWheelScript.cs" />
      <Compile Include="Assets\Scripts\MainMenuScripts\ApplicationController.cs" />
      <Compile Include="Assets\Scripts\MainMenuScripts\BuyButtonScript.cs" />
      <Compile Include="Assets\Scripts\MainMenuScripts\CuteHamsterRotate.cs" />
@@ -70,6 +74,8 @@
      <Compile Include="Assets\Scripts\MainMenuScripts\New All Shop Scripts\AreYouSurePanelScript.cs" />
      <Compile Include="Assets\Scripts\MainMenuScripts\New All Shop Scripts\BuyButtonScript2.cs" />
      <Compile Include="Assets\Scripts\MainMenuScripts\New All Shop Scripts\EquipEnquipAccessoriesScript.cs" />
+     <Compile Include="Assets\Scripts\MainMenuScripts\New All Shop Scripts\LeftArrowPanelScript.cs" />
+     <Compile Include="Assets\Scripts\MainMenuScripts\New All Shop Scripts\RightPanelScript.cs" />
      <Compile Include="Assets\Scripts\MainMenuScripts\New All Shop Scripts\YesButtonScript.cs" />
      <Compile Include="Assets\Scripts\MainMenuScripts\SceneController.cs" />
      <Compile Include="Assets\Scripts\MainMenuScripts\SettingPanelScript.cs" />

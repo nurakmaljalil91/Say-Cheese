@@ -42,12 +42,14 @@ public class LevelCompleteStarScript : MonoBehaviour {
         {
             // Get 1 Star
             star1.SetActive(true);
+            PlayerPrefs.SetInt("Gold",5);
         }
         if(timeComplete >= 60f && timeComplete <= 179f)
         {
             // Get 2 Star
             star1.SetActive(true);
             star2.SetActive(true);
+            PlayerPrefs.SetInt("Gold",10);
         }
 
         if(timeComplete < 59f)
@@ -56,6 +58,7 @@ public class LevelCompleteStarScript : MonoBehaviour {
             star1.SetActive(true);
             star2.SetActive(true);
             star3.SetActive(true);
+            PlayerPrefs.SetInt("Gold", 15);
         }
 	}
 }
