@@ -9,9 +9,9 @@ public class NPCMovement : MonoBehaviour
 
     private enum STATE { idle, moving };
     private STATE state;
-    public Text randomPositionText;
+    // public Text randomPositionText;
 
-    public Text positionInArray;
+    // public Text positionInArray;
 
     // Nav Mesh agent of the npc
     private NavMeshAgent agent;
@@ -100,7 +100,7 @@ public class NPCMovement : MonoBehaviour
 
     void DebugRandomPositionText()
     {
-        randomPositionText.text = "NPC position: " + transform.position.ToString();
+        // randomPositionText.text = "NPC position: " + transform.position.ToString();
     }
 
     void ArrivedAtTargetPosition()

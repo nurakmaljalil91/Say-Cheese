@@ -10,7 +10,7 @@ public class NPCCollectsCheese : MonoBehaviour
     private GameObject audioManager;
     // Use this for initialization
 
-    public Text cheeseScoreText;
+    // public Text cheeseScoreText;
     void Start()
     {
         audioManager = GameObject.FindGameObjectWithTag("AudioManager");
@@ -20,7 +20,7 @@ public class NPCCollectsCheese : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        cheeseScoreText.text = gameObject.tag.ToString() + " : " + NumberOfCheese;
+        // cheeseScoreText.text = gameObject.tag.ToString() + " : " + NumberOfCheese;
     }
 
 
