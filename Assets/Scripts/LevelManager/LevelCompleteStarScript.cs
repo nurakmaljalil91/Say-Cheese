@@ -23,6 +23,8 @@ public class LevelCompleteStarScript : MonoBehaviour
     private bool playWinningSound = false;
 
     private bool playStarSound = false;
+
+    private bool increaseGold = false;
     // Use this for initialization
     void Start()
     {
@@ -61,8 +63,14 @@ public class LevelCompleteStarScript : MonoBehaviour
 
             PlayWinSound();
             PlayStarsSound(1);
-            currentGoldAmount += 5;
-            PlayerPrefs.SetInt("Gold", currentGoldAmount);
+            if (!increaseGold)
+            {
+                currentGoldAmount += 5;
+                PlayerPrefs.SetInt("Gold", currentGoldAmount);
+                increaseGold = true;
+            }
+
+
         }
         if (timeComplete >= 60f && timeComplete <= 179f)
         {
@@ -71,8 +79,11 @@ public class LevelCompleteStarScript : MonoBehaviour
             star2.SetActive(true);
             PlayWinSound();
             PlayStarsSound(2);
-            currentGoldAmount += 10;
-            PlayerPrefs.SetInt("Gold", currentGoldAmount);
+            if (!increaseGold)
+            {
+
+            }
+
         }
 
         if (timeComplete < 59f)
@@ -81,11 +92,15 @@ public class LevelCompleteStarScript : MonoBehaviour
             star1.SetActive(true);
             star2.SetActive(true);
             star3.SetActive(true);
-            Debug.Log(playWinningSound);
+            if (!increaseGold)
+            {
+                currentGoldAmount += 15;
+                PlayerPrefs.SetInt("Gold", currentGoldAmount);
+                increaseGold = true;
+            }
             PlayWinSound();
             PlayStarsSound(3);
-            currentGoldAmount += 15;
-            PlayerPrefs.SetInt("Gold", currentGoldAmount);
+
         }
     }
 
@@ -104,7 +119,7 @@ public class LevelCompleteStarScript : MonoBehaviour
         {
             if (noOfStar == 1)
             {
-                audioManager.GetComponent<AudioSource>().PlayOneShot(audioManager.GetComponent<AudioManagerScripts>().sounds[4].clip,1);
+                audioManager.GetComponent<AudioSource>().PlayOneShot(audioManager.GetComponent<AudioManagerScripts>().sounds[4].clip, 1);
                 playStarSound = false;
             }
             if (noOfStar == 2)
@@ -119,4 +134,6 @@ public class LevelCompleteStarScript : MonoBehaviour
             }
         }
     }
+
+
 }
