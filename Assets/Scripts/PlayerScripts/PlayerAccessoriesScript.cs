@@ -14,6 +14,8 @@ public class PlayerAccessoriesScript : MonoBehaviour
         // TODO: Player top hat will determine by the 
         // if zero so no items attached
         // maybe can use switch here
+        // PlayerPrefs.SetInt("hat",0); //for reset
+        // PlayerPrefs.SetInt("bag",0); // for reset
 
         hat = PlayerPrefs.GetInt("hat");
         bag = PlayerPrefs.GetInt("bag");
