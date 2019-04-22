@@ -22,7 +22,9 @@ public class BackToMainMenu : MonoBehaviour
         }
     }
 
-
+    public void BacktoMainMenuFunction(){
+        StartCoroutine(LoadAsynchronously(0));
+    }
 
 
     IEnumerator LoadAsynchronously(int sceneIndex)

@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/**
+ * Code not use anymore because this applicable only if the level
+ * selection is in one page
+ */
 public class LevelSelectionManagerScripts : MonoBehaviour {
 
 
@@ -13,7 +17,7 @@ public class LevelSelectionManagerScripts : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        // PlayerPrefs.SetInt("level", 0); // for reset
+        //PlayerPrefs.SetInt("level", 0); // for reset
         Debug.Log(PlayerPrefs.GetInt("level"));
 
         currentLevel = PlayerPrefs.GetInt("level");

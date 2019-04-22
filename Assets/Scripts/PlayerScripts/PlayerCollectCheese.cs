@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerCollectCheese : MonoBehaviour {
 
-	[SerializeField] private int NumberOfCheese;
+	public int NumberOfCheese;
 	private Rigidbody rBody;
 
     private GameObject audioManager;
@@ -43,4 +43,9 @@ public class PlayerCollectCheese : MonoBehaviour {
 			Time.timeScale = 0;
 		}
 	}
+
+    public int GetCheese()
+    {
+        return NumberOfCheese;
+    }
 }

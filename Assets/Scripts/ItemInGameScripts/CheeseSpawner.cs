@@ -25,7 +25,7 @@ public class CheeseSpawner : MonoBehaviour
     {
         InitTheArrayWithTheLocationOfCheese();
         cheeseIsInMap = false;
-        totalNumberOfCheese = 10;
+        totalNumberOfCheese = 20;
     }
 
     // Update is called once per frame
