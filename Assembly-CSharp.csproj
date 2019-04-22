@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\LevelManager\NPCSpawnerScript.cs" />
     <Compile Include="Assets\Scripts\LevelManager\PlayerSpawnerScript.cs" />
     <Compile Include="Assets\Scripts\LevelSelectionScripts\BackToMainMenu.cs" />
+    <Compile Include="Assets\Scripts\LevelSelectionScripts\LevelCanSelectScript.cs" />
     <Compile Include="Assets\Scripts\LevelSelectionScripts\LevelSelectionManagerScripts.cs" />
     <Compile Include="Assets\Scripts\LevelSelectionScripts\LevelStarsScript.cs" />
     <Compile Include="Assets\Scripts\LoadingScripts\RotatingWheelScript.cs" />

@@ -23,7 +23,7 @@ public class PlayerCollectCheese : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		cheeseScoreText.text = "CHEESE : " + NumberOfCheese;
+		cheeseScoreText.text = NumberOfCheese.ToString();
 		// WiningTheLevel();
 	}
 

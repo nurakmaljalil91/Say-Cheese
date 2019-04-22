@@ -19,24 +19,20 @@ public class LevelStarsScript : MonoBehaviour
         }
 
         // PlayerPrefs.SetInt("stars" + id.ToString(), 1);
-       
-        // check the id / if id star same with stars id proceed
-        if (PlayerPrefs.GetInt("stars" + id.ToString()) == id)
-        {
-            // check level stars that the player won
-            // get the number
-            starsFilled = PlayerPrefs.GetInt("stars" + id.ToString() + "fills");
-           
-            for(int i = 0; i < starsFilled; i++)
-            {
-                foreach(Transform filled in starsChilds[i].transform)
-                {
-                    Debug.Log(filled.gameObject.name);
-                    filled.gameObject.SetActive(true);
-                }
-            }
+        // check level stars that the player won
+        // get the number
+        starsFilled = PlayerPrefs.GetInt("stars" + id.ToString() + "fills");
 
+        for (int i = 0; i < starsFilled; i++)
+        {
+            foreach (Transform filled in starsChilds[i].transform)
+            {
+                Debug.Log(filled.gameObject.name);
+                filled.gameObject.SetActive(true);
+            }
         }
+
+       
     }
 
 }
